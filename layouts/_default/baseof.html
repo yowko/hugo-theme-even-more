@@ -41,6 +41,10 @@
       <i class="iconfont icon-up"></i>
     </div>
   </div>
-  {{ partial "scripts.html" . }}
+  {{ partial "scripts.html" . }}  
+
+  <!-- by Michael Tsai. 注意: 不能放在太前面的位置，否則網頁版面會亂! -->
+  {{ partial "addon/facebook-sdk.html" . }}
+  <!-- end by Michael Tsai -->  
 </body>
 </html>
