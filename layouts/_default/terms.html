@@ -30,11 +30,18 @@
         {{ else }}
           {{ T "tagCounter" $length }}
         {{ end }}
-      </div>
+      </div>	  
       <div class="tag-cloud-tags">
+	    {{ $scratch := newScratch }}
         {{ range $key, $value := $terms }}
+		  {{ $scratch.Set "tagName" $value.Term }}
+		  {{ if eq ($scratch.Get "tagName") "dotnet" }}  
+		    {{ $scratch.Set "tagName" ".NET" }}
+          {{ else if eq ($scratch.Get "tagName") "csharp" }}
+		    {{ $scratch.Set "tagName" "C#" }}
+	      {{ end }}
           <a href="{{ $name | relLangURL }}/{{ $value.Term | urlize }}/">
-            {{ $value.Term }}
+            {{ $scratch.Get "tagName" }}
             <span class="tag-count">{{ len $value.Pages }}</span>
           </a>
         {{ end }}

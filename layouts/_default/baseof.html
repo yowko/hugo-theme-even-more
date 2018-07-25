@@ -14,37 +14,39 @@
   {{ partial "head.html" . }}
 </head>
 <body>
+  <!-- Facebook SDK. -->
+  {{ partial "addon/facebook-sdk.html" . }}
+  <!-- end Facebook SDK -->   
+
   {{ partial "slideout.html" . }}
   <div class="container" id="mobile-panel">
     {{ if not .Params.hideHeaderAndFooter -}}
-    <header id="header" class="header">
+    <header id="header" class="header" style="height: 118px; padding-bottom: 0px;">
         {{ partial "header.html" . }}
     </header>
-    {{- end }}
-
-    <main id="main" class="main">
-      <div class="content-wrapper">
-        <div id="content" class="content">
+    {{- end }}	
+    <main id="main" class="main">		
+      <div class="content-wrapper">		
+		<hr style="border-top: 1px solid #e6e6e6; border-bottom: 0px; padding: 0px;" />
+        <div id="content" class="content">		
           {{ block "content" . }}{{ end }}
         </div>
         {{ partial "comments.html" . }}
       </div>
     </main>
-
+	
     {{ if not .Params.hideHeaderAndFooter -}}
     <footer id="footer" class="footer">
       {{ partial "footer.html" . }}
     </footer>
     {{- end }}
-
+	
     <div class="back-to-top" id="back-to-top">
       <i class="iconfont icon-up"></i>
     </div>
-  </div>
+  </div> 
+  
   {{ partial "scripts.html" . }}  
 
-  <!-- by Michael Tsai. 注意: 不能放在太前面的位置，否則網頁版面會亂! -->
-  {{ partial "addon/facebook-sdk.html" . }}
-  <!-- end by Michael Tsai -->  
 </body>
 </html>

@@ -14,10 +14,11 @@
       margin-right: 5px;
       color: $theme-color;
       word-break: break-all;
-
+/* Uncomment the  following line if 
       &::before {
         content: '#';
       }
+*/
     }
   }
 

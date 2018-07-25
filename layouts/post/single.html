@@ -44,8 +44,16 @@
     <footer class="post-footer">
       {{ with .Params.tags -}}
         <div class="post-tags">
+		  標籤：
+		  {{ $scratch := newScratch }}
           {{ range . }}
-          <a href="{{ "tags" | relLangURL }}/{{ . | urlize }}/">{{ . }}</a>
+		    {{ $scratch.Set "tagName" . }}
+		    {{ if eq . "dotnet"}}
+		      {{ $scratch.Set "tagName" ".NET" }}
+		    {{ else if eq . "csharp"}}
+		      {{ $scratch.Set "tagName" "C#" }}
+		    {{ end }}	
+            <a href="{{ "tags" | relLangURL }}/{{ . | urlize }}/">{{ $scratch.Get "tagName" }}</a>
           {{ end }}
         </div>
       {{- end }}
