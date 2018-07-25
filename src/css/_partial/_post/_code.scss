@@ -29,7 +29,7 @@ figure.highlight {
       padding: 2px 7px;
       font-size: $code-font-size;
       font-weight: bold;
-      color: darken($gray, 10%);
+      color: #808000;
       background: darken($code-background, 3%);
       content: 'Code';
     }
@@ -50,7 +50,7 @@ figure.highlight {
 
   .gutter {
     width: 10px;
-    color: $gray;
+    color: #999999;
 
     pre {
       margin: 0;

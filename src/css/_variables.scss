@@ -9,7 +9,7 @@ $theme-color-config: 'Default';
 
 // Default theme color map
 $theme-color-map: (
-  'Default': #c05b4d #f8f5ec,
+  'Default': #c05b4d #f8f8f8,
   'Mint Green': #16982B #f5f5f5,
   'Cobalt Blue': #0047AB #f0f2f5,
   'Hot Pink': #FF69B4 #f8f5f5,
@@ -195,16 +195,16 @@ $code-font-size: 13px !default;
 // Font family of the code.
 $code-font-family: Consolas, Monaco, Menlo, Consolas, monospace !default;
 
-// Color of code highlight, solarized.
+// Color of code highlight, using vs2015: https://github.com/highlightjs/highlight.js/blob/master/src/styles/vs2015.css
 $code-highlight-color: (
-  comment: #93a1a1,
-  keyword: #859900,
-  number: #2aa198,
-  title: #268bd2,
-  attribute: #b58900,
-  symbol: #cb4b16,
-  built_in: #dc322f,
-  formula: #eee8d5
+  comment: #00802b,
+  keyword: #333333,
+  number: #880000,
+  title: #880000,
+  attribute: #9CDCFE,
+  symbol: #BC6060,
+  built_in: #397300,
+  formula: #DCDCDC
 ) !default;
 
 // Code type list.
