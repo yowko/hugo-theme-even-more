@@ -2,7 +2,7 @@
 
 A super concise theme for Hugo
 
-> It's a port of [hugo-then-even](https://github.com/olOwOlo/hugo-theme-even), which is a port of [hexo-theme-even](https://github.com/ahonn/hexo-theme-even).
+> It's a port of [hugo-theme-even](https://github.com/olOwOlo/hugo-theme-even), which is a port of [hexo-theme-even](https://github.com/ahonn/hexo-theme-even).
 
 You can visit [my blog](https://www.huanlintalk.com) or Even theme's [demo site](https://blog.olowolo.com/example-site/) | [中文說明](https://github.com/huanlin/hugo-theme-even-more/blob/master/README-zh.md)
 
