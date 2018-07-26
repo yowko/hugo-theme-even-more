@@ -1,10 +1,22 @@
-# hugo-theme-even
+# hugo-theme-even-more
 
-A super concise theme for Hugo
+這是個極簡風格的 Hugo 主題（theme）。
 
-> 该主题移植自 [hexo-theme-even](https://github.com/ahonn/hexo-theme-even)
+> 此主題修改自 [hugo-theme-even](https://github.com/olOwOlo/hugo-theme-even)，而該主題又移植自 [hexo-theme-even](https://github.com/ahonn/hexo-theme-even)
 
-[在线预览 Demo](https://blog.olowolo.com/example-site/)
+你可以從我的部落格 [Huanlin Blog](https://www.huanlintalk.com/) 查看此主題所呈現出來的風格，或者瀏覽 [even 主題的範例網站](https://blog.olowolo.com/example-site/)。
+
+## 與 even 主題的差異
+
+我在 even 主題的基礎上做了一些修改，包括：
+
+- 增加[繁體中文的字串資源](https://github.com/huanlin/hugo-theme-even-more/blob/master/i18n/zh-TW.yaml)。
+- 解決網站的標籤（tags）名稱無法顯示 ".NET" 與 "C#" 的問題。詳見：[taxonomy.html](https://github.com/huanlin/hugo-theme-even-more/blob/master/layouts/_default/taxonomy.html#L9-L15)、[terms.html](https://github.com/huanlin/hugo-theme-even-more/blob/master/layouts/_default/terms.html#L35-L44)、[post/single.html](https://github.com/huanlin/hugo-theme-even-more/blob/master/layouts/post/single.html#L52-L61)。
+- 加入 Facebook SDK 的指令。如果你需要在網站上放置臉書的粉絲專頁外掛或讚按鈕、分享按鈕，只要把臉書產生的[社交外掛](https://developers.facebook.com/docs/plugins)指令碼貼到網頁適當的地方就行了。
+- Config.toml 檔案增加參數 `showFacebookLikeCount`，若此參數值為 true，便會在每一篇文章下方顯示那篇文章的按讚數量。
+- 修改預設的程式碼語法顏色。Even 主題提供了四種配色風格，我修改了預設風格，讓它在顯示程式碼的時候，更接近我喜歡的配色。
+
+以下各節均為 even 主題的原始文件，我沒有作任何更動。
 
 ## Screenshots
 
