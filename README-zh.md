@@ -8,7 +8,7 @@
 
 ## 與 even 主題的差異
 
-我在 even 主題的基礎上做了一些修改，包括：
+此主題是在 even 主題的基礎上進行修改，包括：
 
 - 增加[繁體中文的字串資源](https://github.com/huanlin/hugo-theme-even-more/blob/master/i18n/zh-TW.yaml)。
 - 解決網站的標籤（tags）名稱無法顯示 ".NET" 與 "C#" 的問題。詳見：[taxonomy.html](https://github.com/huanlin/hugo-theme-even-more/blob/master/layouts/_default/taxonomy.html#L9-L15)、[terms.html](https://github.com/huanlin/hugo-theme-even-more/blob/master/layouts/_default/terms.html#L35-L44)、[post/single.html](https://github.com/huanlin/hugo-theme-even-more/blob/master/layouts/post/single.html#L52-L61)。
