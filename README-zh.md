@@ -24,9 +24,15 @@
 
 ![even-showcase](https://raw.githubusercontent.com/olOwOlo/hugo-theme-even/master/images/showcase.png)
 
+首頁：
+
 ![even-more-screenshot-1](images/screenshot-1.png)
 
+文章（右邊有目錄）：
+
 ![even-more-screenshot-2](images/screenshot-2.png)
+
+文章底部：
 
 ![even-more-screenshot-3](images/screenshot-3.png)
 
