@@ -38,9 +38,14 @@
     <!-- Copyright -->
     {{ partial "post/copyright.html" . }}
 
+	<!-- Facebook like count and share button -->
+	{{ if .Site.Params.showFacebookLikeCount -}}
+	  <div class="fb-like" style="margin-left: 10px; margin-top: 4px;" data-href="{{ .Permalink }}" data-layout="standard" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+	{{- end }}
+	
     <!-- Reward -->
     {{ partial "post/reward.html" . }}
-
+	
     <footer class="post-footer">
       {{ with .Params.tags -}}
         <div class="post-tags">
