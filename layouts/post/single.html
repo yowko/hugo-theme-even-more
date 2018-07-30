@@ -14,8 +14,8 @@
           </div>
         {{- end }}
         {{ if .Site.Params.moreMeta -}}
-        <span class="more-meta"> {{ T "wordCount" .WordCount }} </span>
-        <span class="more-meta"> {{ T "readingTime" .ReadingTime }} </span>
+          <span class="more-meta"> {{ T "wordCount" .WordCount }} </span>
+          <span class="more-meta"> {{ T "readingTime" .ReadingTime }} </span>
         {{- end }}
         {{ if and .Site.Params.busuanzi.enable .Site.Params.busuanzi.pagePV -}}
         {{ $valueSpan := printf `<span id="busuanzi_value_page_pv"><img src="%s" alt="spinner.svg"/></span>` ("img/spinner.svg" | relURL) -}}
@@ -66,18 +66,22 @@
       <!-- Post Pagination -->
       <nav class="post-nav">
         {{ with .NextInSection }}
-          <a class="prev" href="{{ .URL }}">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">{{ .Title }}</span>
-            <span class="prev-text nav-mobile">{{ T "prevPost" }}</span>
+		  <div>
+          <a class="prev" href="{{ .URL }}" style="float: none;">
+            <span class="next-text nav-mobile" style="display: inline-block;">{{ T "nextPost" }}</span>			
+            <i class="fas fa-arrow-circle-right"></i>			
+            <span class="next-text nav-default">{{ .Title }}</span>			
           </a>
+		  </div>
         {{- end }}
+		  <div>
         {{ with .PrevInSection }}
-          <a class="next" href="{{ .URL }}">
-            <span class="next-text nav-default">{{ .Title }}</span>
-            <span class="next-text nav-mobile">{{ T "nextPost" }}</span>
-            <i class="iconfont icon-right"></i>
+          <a class="prev" href="{{ .URL }}" style="float: none;">
+            <span class="prev-text nav-mobile" style="display: inline-block;">{{ T "prevPost" }}</span>	  
+            <i class="fas fa-arrow-circle-left"></i>
+            <span class="prev-text nav-default">{{ .Title }}</span>			
           </a>
+		  </div>
         {{- end }}
       </nav>
     </footer>
