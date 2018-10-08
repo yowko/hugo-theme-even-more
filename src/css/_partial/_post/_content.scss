@@ -41,9 +41,9 @@
 
   img {  // 2018-07-22 Michael Tsai: 讓圖片水平置中
     display: block;     
-    max-width: 70%;     
-    margin-left: auto;  
-    margin-right: auto; 
+    max-width: 100%;     
+    // margin-left: auto;  
+    // margin-right: auto; 
   }
 
   > table {
