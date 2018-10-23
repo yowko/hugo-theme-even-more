@@ -1,4 +1,2 @@
 User-agent: *
 Sitemap: {{ "sitemap.xml" | absURL }}
-Disallow: /search/label/*
-Disallow: /feeds/*
