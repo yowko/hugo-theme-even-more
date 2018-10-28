@@ -2,3 +2,34 @@
 // Custom style
 // ==============================
 // You can override the variables in _variables.scss to customize the style
+.post
+{
+    .post-content
+    {
+        h1,h2,h3,h4,h5,h6{
+            color: #2BABE1
+        }
+    }
+}
+pre{
+    div.line{
+        color: #212121
+    }
+}
+a.logo{
+    color:#E1F5FE;
+}
+nav.site-navbar{
+    ul.menu{
+        li.menu-item{
+            a.menu-item-link{
+                color: #388E3C;
+            }
+        }
+    }
+}
+// nav.post-nav{
+//     a.prev{
+//         color: #388E3C;
+//     }
+// }

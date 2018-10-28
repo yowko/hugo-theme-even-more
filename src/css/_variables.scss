@@ -5,7 +5,7 @@
 // ========== Theme Color ========== //
 // Config here to change theme color
 // Default | Mint Green | Cobalt Blue | Hot Pink | Dark Violet
-$theme-color-config: 'Cobalt Blue';
+$theme-color-config: 'Dark Gray';//'Cobalt Blue';
 
 // Default theme color map
 $theme-color-map: (
@@ -13,7 +13,8 @@ $theme-color-map: (
   'Mint Green': #16982B #f5f5f5,
   'Cobalt Blue': #29AAE1 #f0f2f5,//#0047AB
   'Hot Pink': #FF69B4 #f8f5f5,
-  'Dark Violet': #9932CC #f5f4fa
+  'Dark Violet': #9932CC #f5f4fa,
+  'Dark Gray':#2BABE1 #eceff1
 );
 
 // Check theme color config.
@@ -35,12 +36,12 @@ $black: #0a0a0a !default;
 $white: #fefefe !default;
 $light-gray: #e6e6e6 !default;
 $gray: #cacaca !default;
-$dark-gray: #8a8a8a !default;
-
+$dark-gray: #232323 !default;
+$night-gray:#434343!default;
 
 // ========== Global ========== //
 // Text color of the body.
-$global-font-color: #616161  !default;
+$global-font-color: #C6C6C6  !default;// #616161  !default;
 
 // Font size attribute applied to '<html>' and '<body>'.
 $global-font-size: 16px !default;
@@ -61,7 +62,7 @@ $global-font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif !def
 $global-serif-font-family: Athelas, STHeiti, Microsoft Yahei, serif !default;
 
 // Background color of the site.
-$global-background: $white !default;
+$global-background: $dark-gray !default;//$white !default;
 
 // Headings font size of the site.
 $global-headings: (
@@ -152,7 +153,7 @@ $post-nav-font-size: 18px !default;
 $post-toc-width: 200px !default;
 
 // Backgroud color of the post toc.
-$post-toc-backgroud: rgba($deputy-color, 0.6) !default;
+$post-toc-backgroud: rgba($deputy-color, 0.4) !default;
 
 // Margin left of the post toc.
 $post-toc-margin-left: $global-body-width - 15px !default;
@@ -201,7 +202,7 @@ $code-highlight-color: (
   keyword: #333333,
   number: #880000,
   title: #880000,
-  attribute: #9CDCFE,
+  attribute: #0091ea ,
   symbol: #BC6060,
   built_in: #397300,
   formula: #DCDCDC
@@ -210,6 +211,8 @@ $code-highlight-color: (
 // Code type list.
 $code-type-list: (
   // Custom code type
+  language-cmd: "CMD",
+  language-ps1: "PowerShell",
   language-bash: "Bash",
   language-c: "C",
   language-cs: "C#",
