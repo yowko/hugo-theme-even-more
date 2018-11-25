@@ -36,10 +36,12 @@
         {{ range $key, $value := $terms }}
 		  {{ $scratch.Set "tagName" $value.Term }}
 		  {{ if eq ($scratch.Get "tagName") "dotnet" }}  
-		    {{ $scratch.Set "tagName" ".NET" }}
-          {{ else if eq ($scratch.Get "tagName") "csharp" }}
+        {{ $scratch.Set "tagName" ".NET" }}
+      {{ else if eq ($scratch.Get "tagName") "dotnet core" }}
+		    {{ $scratch.Set "tagName" ".NET Core" }}
+      {{ else if eq ($scratch.Get "tagName") "csharp" }}
 		    {{ $scratch.Set "tagName" "C#" }}
-	      {{ end }}
+	    {{ end }}
           <a href="{{ $name | relLangURL }}/{{ $value.Term | urlize }}/">
             {{ $scratch.Get "tagName" }}
             <span class="tag-count">{{ len $value.Pages }}</span>

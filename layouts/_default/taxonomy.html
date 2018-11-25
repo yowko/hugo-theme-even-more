@@ -6,8 +6,10 @@
   {{ if not $paginator.HasPrev }}
     {{ if eq .Data.Plural "tags" }}
       <div class="archive-title tag">
-	    {{ if eq .Title "Dotnet" }}
-		  <h2 class="archive-name">.NET</h2>
+	  {{ if eq .Title "Dotnet" }}
+      <h2 class="archive-name">.NET</h2>
+    {{ else if eq .Title "Dotnet core" }}
+		  <h2 class="archive-name">.NET Core</h2>
 		{{ else if eq .Title "Csharp" }}
 		  <h2 class="archive-name">C#</h2>
 		{{ else }}

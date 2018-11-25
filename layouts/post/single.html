@@ -54,7 +54,9 @@
           {{ range . }}
 		    {{ $scratch.Set "tagName" . }}
 		    {{ if eq . "dotnet"}}
-		      {{ $scratch.Set "tagName" ".NET" }}
+          {{ $scratch.Set "tagName" ".NET" }}
+        {{ else if eq . "dotnet core"}}
+		      {{ $scratch.Set "tagName" ".NET Core" }}
 		    {{ else if eq . "csharp"}}
 		      {{ $scratch.Set "tagName" "C#" }}
 		    {{ end }}	
