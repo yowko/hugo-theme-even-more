@@ -1,6 +1,3 @@
-User-agent: Googlebot
-Disallow: /search/
-
 User-agent: *
 Allow: /
 
