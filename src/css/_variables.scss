@@ -14,7 +14,7 @@ $theme-color-map: (
   'Cobalt Blue': #29AAE1 #f0f2f5,//#0047AB
   'Hot Pink': #FF69B4 #f8f5f5,
   'Dark Violet': #9932CC #f5f4fa,
-  'Dark Gray':#2BABE1 #eceff1
+  'Dark Gray':#2BABE1 #616161
 );
 
 // Check theme color config.
@@ -199,7 +199,7 @@ $code-font-family: Consolas, Monaco, Menlo, Consolas, monospace !default;
 // Color of code highlight, using vs2015: https://github.com/highlightjs/highlight.js/blob/master/src/styles/vs2015.css
 $code-highlight-color: (
   comment: #00802b,
-  keyword: #333333,
+  keyword: #eceff1,//#333333,
   number: #880000,
   title: #880000,
   attribute: #0091ea ,
